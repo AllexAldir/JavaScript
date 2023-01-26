@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+    <link rel="shortcut icon" href="../../HTML_EX/Simpsons_0.ico" type="image/x-icon">
+
+    <style>
+
+        h1#principal{
+            text-align: center;
+
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="principal">Aqui testando os scripts</h1>
+
+
+    <script>
+
+        var nome = prompt("Digite aqui o seu nome: ").toUpperCase()
+
+        var idade = Number(prompt("Digite sua idade aqui: "))
+
+        let sal = parseFloat(prompt("Digite aqui o seu salário: ")).toFixed(2).replace('.',',') 
+
+
+        /*
+            Trocando meu ponto por uma vírgula!
+
+        */
+
+        document.write(`Oi <strong>${nome}</strong> sua idade é ${idade} consequentimente o seu salário é R$${sal}.`)
+
+    </script>
+</body>
+</html>
