@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1 id="principal" onclick="clique()">Hello world!</h1>
+
+    <p id="p_01">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facilis minima dignissimos, exercitationem, fugiat nulla perferendis adipisci perspiciatis dolore iure maiores magni illum unde facere delectus, eveniet ratione? Alias, sequi.</p>
+
+    <p id="p_02">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat asperiores similique minus, magni iste facilis est? Dignissimos, saepe. Incidunt, distinctio sunt ex eius quibusdam voluptatem quidem laudantium impedit beatae! Deserunt!</p>
+
+    <script>
+
+        let nome = 'ÁLlex'
+        if(nome == 'Roberto'){
+            document.write('Nome errado!')
+
+        }else{
+            document.write('<strong>Nome certo!</strong> <br> <br>')
+
+        }
+
+        var nome_tag = document.getElementsByTagName('p')[0]
+
+        document.write(`Nome do elemento é:${nome_tag.innerText}`)
+
+        /*function clique(){
+            if()
+
+        }*/
+
+        
+    </script>
+</body>
+</html>
