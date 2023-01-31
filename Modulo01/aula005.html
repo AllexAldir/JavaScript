@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros!</title>
+</head>
+
+<body>
+    <h1>Soma</h1>
+    <input type="number" id="num01" placeholder="Digite um número:"> +
+    <input type="number" id="num02" placeholder="Digite um segundo numero:">
+    <input type="button" value="soma" onclick="soma()">
+
+    <div id="prin">
+        Resultado:
+    </div>
+    <script>
+
+        function soma() {
+            var v_prin = document.querySelector('div#prin')
+            var num01 = document.querySelector('input#num01')
+            var num02 = document.querySelector('input#num02')
+
+            var n01 = Number(num01.value)
+            var n02 = Number(num02.value)
+            var soma = n01 + n02
+
+            v_prin.innerHTML = soma
+            //Uma função para soma!
+        }
+    </script>
+</body>
+
+</html>

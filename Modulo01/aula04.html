@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        div#area {
+            background-color: green;
+            color: white;
+            width: 20%;
+            height: 200px;
+            text-align: center;
+            line-height: 180px;
+            font-size: 1.5em;
+
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area">
+        interaja...
+        <!--
+            Pode colocar o onclique como paramentro, mouseenter, mouseout...
+
+        -->
+
+    </div>
+
+
+    <script>
+        var div = document.querySelector('div#area')
+        div.addEventListener('click' , clique)
+        div.addEventListener('mouseenter', entrou)
+        div.addEventListener('mouseout', saiu)
+        //Metódo de colocar adicionando no scorpo do meu código! 
+        
+        function clique() {
+
+            //Aqui estou fazendo uma ligação entre esse elemento com para minha função!
+
+            div.innerHTML = 'clicou'
+            //Mensagem que aparecerá quando clicar!
+            div.style.background = 'blue'
+        }
+
+        function entrou() {
+            div.innerHTML = 'entrou'
+            div.style.background = 'red' 
+
+        }
+
+        function saiu(){
+            div.innerHTML = 'saiu'
+            div.style.background = 'green'
+
+        }
+
+
+    </script>
+</body>
+
+</html>
