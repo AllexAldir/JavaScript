@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento teste!</title>
+
+    <style>
+
+        input#i_enviar{
+            display: block;
+            text-align: center;
+            width: 20%;
+            padding: 8px;
+            cursor: pointer;
+            
+            background-color: aqua;
+        }
+
+        .cor{
+            background-color: red;
+            font-size: 2em;
+            color: white;
+
+            
+
+        }
+
+        div#pri_div{
+            width: 50%;
+            height: 9em;
+            margin-top: 20px;
+            margin: auto;
+            text-align: center;
+            padding-top: 144px;
+            
+            /* background-color: black; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+
+    <input type="number" name="inumber" id="i_number"> +
+    <input type="number" name="inumber" id="i_number02"> =
+
+    <p onclique="clique()" style="cursor: pointer;">Resultado...</p>
+
+    <input type="submit" value="Enviar" onclick="cclique()">
+
+    <div id="pri_div">
+        Hello
+    </div>
+    <script>
+        var div = document.querySelector('div#pri_div')
+        console.log(div);
+
+        function cclique(){
+            if(div.classList.contains('cor')){
+                div.classList.remove('cor')
+                
+            }else{
+                div.classList.add('cor')
+                
+            
+            }
+
+
+        }
+
+        function clique(){
+
+            var num01 = document.getElementById('i_number')
+            var num02 = document.getElementById('i_number02')
+
+            var primeio_p = document.getElementsByTagName('p')[0]
+            // console.log(primeio_p);
+
+
+            x = Number(num01.value)
+            y = Number(num02.value)
+
+            var s = x + y
+
+            document.write(s)
+
+        }
+    </script>
+</body>
+
+</html>
