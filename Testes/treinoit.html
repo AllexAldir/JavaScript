@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino js</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        div#div_pri {
+            background-color: aqua;
+            width: 50%;
+            height: 30em;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        input#i_sub {
+            margin-top: 1.2em;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="principal">Hello world!</h1>
+
+
+
+    <p>
+
+        <input type="text" name="n_nome" id="i_pais" placeholder="Digite aqui a sua nacionalidade!">
+        <br>
+        <input type="submit" value="Enviar!" name="n_sub" id="i_sub" onclick="clique()">
+
+    </p>
+
+
+
+    <div id="div_pri">
+
+
+    </div>
+
+    <script>
+
+
+        function clique() {
+            var div = document.getElementById('div_pri')
+
+            var cont = document.querySelector('input#i_pais')
+
+            var valor = cont.value
+            //Aqui ta pegando o valor!
+
+            if(valor == 'Brasil'){
+                div.innerHTML = `Aqui é o :<strong> ${valor}`
+            }else{
+                div.innerHTML = `Nacionalidade não é brasileira e sim: <strong>${valor}<strong>`
+                
+            }
+
+            
+
+
+        }
+
+    </script>
+</body>
+
+</html>
