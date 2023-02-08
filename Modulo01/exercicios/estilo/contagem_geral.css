@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor01: #0EB32F;
+    --cor02: #1D6B2C;
+    /*
+        cores confortaveis
+    */
+
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+html{
+
+    height: 100vh;
+}
+
+body{
+    background-color: var(--cor01);
+    
+
+    height: 100vh;
+
+
+}
+
+header{
+    text-align: center;
+
+}
+
+h1#pincipal{
+    color: white;
+
+}
+
+section{
+    background-color: white;
+
+    width: 50%;
+    margin: auto;
+    padding: 0.6em;
+
+
+}
+
+div#div_02{
+    margin-top: 20px;
+
+}
+
+footer{
+    text-align: center;
+}
+
+footer > p{
+    color: white;
+    font-size: 1.2em;
+}
