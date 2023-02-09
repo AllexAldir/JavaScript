@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor01: #a6fb98;
+    /*
+        Cor verde limão!
+    */
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background-color: var(--cor01);
+
+}
+
+header{
+    text-align: center;
+
+}
+
+section{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+
+
+    background-color: white;
+
+}
+
+div#div01{
+    display: flex;
+
+
+}
+
+div#div01 > img{
+    margin-right: 1em;
+
+}
