@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;/*se for necessário ele quebra!*/
+
+
+    height: 6em;
+    align-items: center;
+
+
+
+    background-color: black;
+    
+}
+
+nav > ul{
+    display: flex;
+
+}
+
+nav > ul > li > a{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+div#prin{
+    text-align: center;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+section#sec_01{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+section#sec_01 > div{
+    flex: 1 1 12em;
+    margin: 0.65em;
+
+}
+
+/*css grid 01*/
+
+section.grid01{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Aqui fraciona as divs em colunas */
+}
+
+div#div_pr02{
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+
+
+}
+
+div.div_grid{
+    margin: 5px;
+}
+
+div.div_grid:nth-child(n + 4){
+    /*Ou seja a partir do 4 quarto filho ele terá uma modificação no css*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 200px;
+    grid-gap: 10px; /*deixa-o menor!*/
+    align-items: center;
+
+}
+
+div#anuncio{
+    grid-column: 1;
+    grid-row: 2/ 5; 
+    /*Deixa na linha 2 em forma original com o display block*/
+    display: block;
+}
