@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+/*Config de estilos do modo yt*/
+
+
+div#principal{
+    text-align: center;
+
+}
+
+section.grid_yt{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+
+
+img{
+    max-width: 200px;
+}

@@ -45,7 +45,7 @@ div#prin{
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%; /*Aqui é 100% do tamanho da sua div*/
 }
 
 section#sec_01{
