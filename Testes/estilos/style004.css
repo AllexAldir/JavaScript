@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+div#principal{
+    text-align: center;
+    
+
+}
+
+section.grid03{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr); /*pegando aqui 2 colunas*/
+}
+
+section.grid03 > div:nth-child(1){
+    /* background-color: aqua; */
+    grid-template-rows: 1 / 3;
+    /*Dizendo para a div número 1 que ela ocupar duas linhas de 3*/
+    
+}
+
+
+section.grid03 > div > img{
+    max-width: 300px;
+    grid-column: 1;
+    grid-row: 1/3;
+    display: grid;
+    
+
+}
+
+section.grid03 > div > p{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+
+}
+

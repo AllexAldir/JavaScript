@@ -10,11 +10,15 @@ div#principal{
 }
 
 section.grid_yt{
+    margin: auto;
+    max-width: 60em;
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 200px ;
 }
 
-
+div#sol{
+    width: 30%;
+}
 
 img{
     max-width: 200px;
