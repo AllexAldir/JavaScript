@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+:root{
+    --cor01: #9AE61C;
+    --cor02: #4E0466;
+    --cor03: #E60129;
+    --cor04: #292466;
+}
+
+html , body{
+    height: 100%;
+}
+
+div.contanier{
+    background-color: var(--cor01); 
+    display: grid;
+    grid-template-columns:  4fr 1fr;
+}   
+
+div.contanier > header{
+    background-color: #292466;
+}
+
+div.contanier> main{
+    background-color: var(--cor02);
+
+}
+
+div.contanier > aside{
+    background-color: var(--cor03);
+}
+
+div.contanier > footer{
+    background-color: var(--cor04);
+}
